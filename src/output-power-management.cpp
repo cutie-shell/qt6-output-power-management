@@ -29,14 +29,14 @@ void OutputPowerManagerV1Private::setMode(bool mode) {
 	if (m_mode == mode) return;
 	m_mode = mode;
 	m_old_mode = mode;
-	emit q->modeChanged(m_mode);
+	emit q->modeChanged();
 }
 
 void OutputPowerManagerV1Private::resetMode() {
 	Q_Q(OutputPowerManagerV1);
 	if (m_mode == m_old_mode) return;
 	m_mode = m_old_mode;
-	emit q->modeChanged(m_mode);
+	emit q->modeChanged();
 }
 
 void OutputPowerManagerV1Private::onActiveChanged() {

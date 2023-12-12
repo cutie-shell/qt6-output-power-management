@@ -19,7 +19,7 @@ public:
 	void setMode(bool mode);
 
 signals:
-	void modeChanged(bool mode);
+	void modeChanged();
 
 private:
 	OutputPowerManagerV1Private *d_ptr;
