@@ -44,7 +44,6 @@ void OutputPowerManagerV1Private::onActiveChanged() {
 	m_power = new OutputPowerV1(this, 
 		get_output_power(static_cast<QtWaylandClient::QWaylandScreen*>(
 			qApp->screens().first()->handle())->output()));
-	m_power->set_mode(m_mode);
 }
 
 OutputPowerV1::OutputPowerV1(
